@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Elements</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.125em;
+            line-height: 1.6;
+            color: #333;
+            padding: 2em;
+        }
+
+        .hero {
+            display: grid;
+            grid-gap: 2em;
+            align-items: center;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: 960px) {
+            .hero {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hello Nday</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo, ipsa dolorem, deleniti architecto maxime, eos doloremque id quas ullam dolorum at dignissimos reprehenderit ratione quibusdam fugiat expedita omnis porro.</p>
+            <picture>
+                <source media="(min-width: 960px)" srcset="img/1.png" sizes="50vw">
+                <source media="(min-width: 600px)" srcset="img/2.jpg" sizes="50vw">
+                <img src="img/3.png" alt="">
+            </picture>
+        </div>
+    </div>
+    <!-- <h1 style="margin-bottom: 1500px;">Image Elements</h1>
+    <figure>
+        <img src="img/1.png" alt="gambar1" srcset="img/2.jpg 500w, img/3.png 750w" sizes="(min-width: 1200px) 50vw" loading="lazy">
+        <figcaption>Ini adalah anjing</figcaption>
+    </figure> -->
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio & Video</title>
+
+    <!-- <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: arial;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /*background-color: rgba(0, 0, 0, 0.); */
+            background-image: linear-gradient(to right, rgba(5, 117, 230, 0.3), rgba(242, 137, 0, 0.3));
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 3em;
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: -1;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- <audio src="audio/audio1.ogg" controls></audio> -->
+
+    <!-- <figure>
+        <figcaption>
+            Rekaman "Penelitian - sensor PH"
+        </figcaption>
+        <audio controls loop muted>
+            <source src="audio/audio1.ogg" type="audio/ogg">
+            <source src="audio/audio1.mp3" type="audio/mpeg">
+        </audio>
+    </figure> -->
+
+    <!-- <figure>
+        <figcaption>
+            Tutorial multimedia
+        </figcaption>
+        <video controls width="400" poster="img/video-bg.png" loop autoplay muted>
+            <source src="video/1.webm" type="video/webm">
+            <source src="video/1.mp4" type="video/mp4">
+            Browser tidak mendukung tag <code>video</code>
+        </video>
+    </figure> -->
+
+    <!-- <div class="hero">
+        <h1>Welcome to Nurul Hidayah</h1>
+        <video class="video-bg" src="video/pantai.webm" autoplay muted loop></video>
+    </div> -->
+
+    <video controls width="400">
+        <source src="video/1.webm" type="video/webm">
+        <track src="captions/caption2.vtt" kind="captions" title="Bahasa Indonesia" srclang="id">
+        <track src="captions/caption2.vtt" kind="captions" title="English" srclang="en">
+    </video>
+</body>
+
+</html>

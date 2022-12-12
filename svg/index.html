@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <style>
+        body {
+            min-height: 1000px;
+        }
+
+        svg {
+            display: block;
+            margin: 20px;
+            background-color: #eee;
+        }
+
+        .satu {
+            background-color: #ddd;
+            width: 300px;
+            height: 300px;
+        }
+
+        .kotak1 {
+            width: 100px;
+            height: 100px;
+            fill: salmon;
+            x: 50;
+            y: 50;
+
+        }
+
+        .bintang{
+            background-color: transparent;
+            animation: putar 5s linear infinite;
+        }
+
+        @keyframes putar {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg class="satu" viewBox="50 50 300 300">
+        <rect class="kotak1" width="100" height="100" fill="salmon" />
+    </svg>
+
+    <svg width="150" height="150">
+        <rect width="100" height="100" fill="lightblue" />
+        <circle r="50" cx="50" cy="50" fill="salmon" />
+        <rect width="70" height="70" x="15" y="15" fill="#333" />
+    </svg>
+
+    <svg>
+        <path fill="none" stroke="black" d="M 60,10 L 110,90 H 10 L 60,10" />
+
+        <path fill="none" stroke="black" d="m 170,10 l 50,80 h -100 l 50,-80" />
+    </svg>
+
+    <svg>
+        <path fill="none" stroke="red" d="M 10,90 C 30,90 25,10 50,10 S 70,90 90,90" />
+    </svg>
+
+    <svg>
+        <path fill="salmon" d="M 10,30
+        A 20,20 0,0,1 50,30
+        A 20,20 0,0,1 90,30
+        Q 90,60 50,90
+        Q 10,60 10,30 z" />
+    </svg>
+
+    <svg width="224" height="212" viewBox="0 0 224 212" fill="none" xmlns="http://www.w3.org/2000/svg" class="bintang">
+        <path
+            d="M112 6.47214L136.366 81.463L136.815 82.845H138.268L217.118 82.845L153.327 129.192L152.152 130.046L152.601 131.428L176.967 206.419L113.176 160.072L112 159.218L110.824 160.072L47.0333 206.419L71.3994 131.428L71.8484 130.046L70.6728 129.192L6.88175 82.845L85.7319 82.845H87.185L87.634 81.463L112 6.47214Z"
+            fill="#294AF8" stroke="black" stroke-width="4" />
+    </svg>
+</body>
+
+</html>
